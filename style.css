@@ -481,20 +481,27 @@ p {
   background-image: url(img/5.jpg); }
 .content section:nth-child(6) .image {
   background-image: url(img/6.jpg); }
+.content section:nth-child(7) .image {
+  position: relative; }
+  .content section:nth-child(7) .image img {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translate(0, -50%); }
 .content section:nth-child(8) .image {
   background-image: url(img/8.jpg);
   background-size: 400px 600px; }
-.content section:nth-child(9) {
+.content section:nth-child(9), .content section:nth-child(10) {
   margin-top: 30px;
   height: 400px; }
-  .content section:nth-child(9) .content {
+  .content section:nth-child(9) .content, .content section:nth-child(10) .content {
     width: 100%;
     text-align: center; }
-    .content section:nth-child(9) .content div {
+    .content section:nth-child(9) .content div, .content section:nth-child(10) .content div {
       left: 50%;
       transform: translate(-50%, 0);
       width: 200px; }
-    .content section:nth-child(9) .content p {
+    .content section:nth-child(9) .content p, .content section:nth-child(10) .content p {
       width: 60%;
       margin: auto; }
 
