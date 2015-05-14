@@ -3,7 +3,7 @@
 .content {
   section {
     width: 100%;
-    height: 400px;
+    height: 500px;
     .image {
       background-repeat: no-repeat; 
       background-position: center;
@@ -14,26 +14,40 @@
     .content {
       width: 45%;
       height: 100%;
-      padding-left: 70px;
-      padding-top: 70px;
-      h1 {
-        font-size: 45px;
-        font-weight: bold;
-        margin: 0;
-        text-transform: uppercase;
-        &:after {
-          content: "";
-          display: block;
-          height: 4px;
-          width: 150px;
-          background-color: $darkgrey;
+      padding: 50px 60px;
+      div {
+        position: relative;
+        height: 80px;
+        h1 {
+          position: absolute;
+          left: 60px;
+          font-size: 45px;
+          font-weight: bold;
+          margin: 0;
+          text-transform: uppercase;
+          &:after {
+            content: "";
+            display: block;
+            height: 4px;
+            width: 150px;
+            background-color: $darkgrey;
+          }
+        }
+        .twoLines {
+          font-size: 34px;
+          margin-top: 7px;
+        }
+        h2 {
+          top: 10px;
+          position: absolute;
+          color: $darkgrey;
+          margin: 0;
+          font-size: 30px;
+          text-transform: uppercase;
         }
       }
-      h2 {
-        color: $darkgrey;
-        margin: 0;
-        font-size: 30px;
-        text-transform: uppercase;
+      p {
+        text-align: justify;
       }
     }
   }
@@ -58,6 +72,12 @@
     background-image: url(img/1.jpg)
   }
   section:nth-child(2) .image {
+    background-image: url(img/2.jpg)
+  }
+  section:nth-child(3) .image {
+    background-image: url(img/3.jpg)
+  }
+  section:nth-child(4) .image {
     background-image: url(img/2.jpg)
   }
 }

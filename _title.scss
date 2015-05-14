@@ -1,7 +1,7 @@
 @import 'config';
 
 .title {
-  border: 15px solid $black;
+  border: 30px solid $black;
   background: $grey;
   height: 100vh;
   text-align: center;
@@ -29,7 +29,7 @@
     text-align: center;
   }
   .scrollTo {
-    color: $black;
+    color: $darkgrey;
     text-decoration: none;
     font-size: 200px;
     display: block;
@@ -40,7 +40,7 @@
     transition-duration: 100ms;
     &:hover {
       bottom: 0px;
-      font-size: 230px;
+      font-size: 250px;
     }
   }
 }

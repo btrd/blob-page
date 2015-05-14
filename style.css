@@ -377,7 +377,7 @@ p {
   font-family: 'PT Serif', serif; }
 
 .title {
-  border: 15px solid #2f363b;
+  border: 30px solid #2f363b;
   background: #f2f2f2;
   height: 100vh;
   text-align: center;
@@ -402,7 +402,7 @@ p {
     transform: translate(-50%, -50%);
     text-align: center; }
   .title .scrollTo {
-    color: #2f363b;
+    color: #aaaaaa;
     text-decoration: none;
     font-size: 200px;
     display: block;
@@ -413,11 +413,11 @@ p {
     transition-duration: 100ms; }
     .title .scrollTo:hover {
       bottom: 0px;
-      font-size: 230px; }
+      font-size: 250px; }
 
 .content section {
   width: 100%;
-  height: 400px; }
+  height: 500px; }
   .content section .image {
     background-repeat: no-repeat;
     background-position: center;
@@ -427,24 +427,35 @@ p {
   .content section .content {
     width: 45%;
     height: 100%;
-    padding-left: 70px;
-    padding-top: 70px; }
-    .content section .content h1 {
-      font-size: 45px;
-      font-weight: bold;
-      margin: 0;
-      text-transform: uppercase; }
-      .content section .content h1:after {
-        content: "";
-        display: block;
-        height: 4px;
-        width: 150px;
-        background-color: #aaaaaa; }
-    .content section .content h2 {
-      color: #aaaaaa;
-      margin: 0;
-      font-size: 30px;
-      text-transform: uppercase; }
+    padding: 50px 60px; }
+    .content section .content div {
+      position: relative;
+      height: 80px; }
+      .content section .content div h1 {
+        position: absolute;
+        left: 60px;
+        font-size: 45px;
+        font-weight: bold;
+        margin: 0;
+        text-transform: uppercase; }
+        .content section .content div h1:after {
+          content: "";
+          display: block;
+          height: 4px;
+          width: 150px;
+          background-color: #aaaaaa; }
+      .content section .content div .twoLines {
+        font-size: 34px;
+        margin-top: 7px; }
+      .content section .content div h2 {
+        top: 10px;
+        position: absolute;
+        color: #aaaaaa;
+        margin: 0;
+        font-size: 30px;
+        text-transform: uppercase; }
+    .content section .content p {
+      text-align: justify; }
 .content section:nth-child(2n+1) .image {
   float: left; }
 .content section:nth-child(2n+1) .content {
@@ -457,6 +468,10 @@ p {
   background-image: url(img/1.jpg); }
 .content section:nth-child(2) .image {
   background-image: url(img/2.jpg); }
+.content section:nth-child(3) .image {
+  background-image: url(img/3.jpg); }
+.content section:nth-child(4) .image {
+  background-image: url(img/2.jpg); }
 
 footer {
   background: #f2f2f2;
@@ -467,7 +482,8 @@ footer {
     left: 50%;
     top: 45%;
     transform: translate(-50%, -50%);
-    text-align: center; }
+    text-align: center;
+    font-size: 30px; }
     footer h2:after {
       content: "";
       display: block;
