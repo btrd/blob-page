@@ -34,13 +34,14 @@
     font-size: 200px;
     display: block;
     position: absolute;
-    bottom: 40px;
+    bottom: 20px;
     left: 50%;
     transform: rotate(90deg) translate(0, 22%);
-    transition-duration: 100ms;
+    transition-duration: 250ms;
     &:hover {
+      color: $black;
       bottom: 0px;
-      font-size: 250px;
+      font-size: 230px;
     }
   }
 }

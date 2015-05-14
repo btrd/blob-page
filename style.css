@@ -407,14 +407,21 @@ p {
     font-size: 200px;
     display: block;
     position: absolute;
-    bottom: 40px;
+    bottom: 20px;
     left: 50%;
     transform: rotate(90deg) translate(0, 22%);
-    transition-duration: 100ms; }
+    transition-duration: 250ms; }
     .title .scrollTo:hover {
+      color: #2f363b;
       bottom: 0px;
-      font-size: 250px; }
+      font-size: 230px; }
 
+.content a {
+  color: #7A99B0;
+  text-decoration: none;
+  font-weight: bold; }
+  .content a:hover {
+    color: #A1CDED; }
 .content section {
   width: 100%;
   height: 500px; }
@@ -470,20 +477,15 @@ p {
   background-image: url(img/2.jpg); }
 .content section:nth-child(3) .image {
   background-image: url(img/3.jpg); }
-.content section:nth-child(4) .image {
-  background-image: url(img/2.jpg); }
 
 footer {
-  background: #f2f2f2;
-  height: 50vh;
-  position: relative; }
+  background: #f2f2f2; }
   footer h2 {
-    position: absolute;
-    left: 50%;
-    top: 45%;
-    transform: translate(-50%, -50%);
     text-align: center;
-    font-size: 30px; }
+    font-size: 25px;
+    text-transform: none;
+    padding: 100px 25%;
+    margin: 0; }
     footer h2:after {
       content: "";
       display: block;
