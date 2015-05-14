@@ -1,0 +1,18 @@
+footer {
+  background: #f2f2f2;
+  height: 50vh;
+  position: relative; }
+  footer h2 {
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+    footer h2:after {
+      content: "";
+      display: block;
+      height: 5px;
+      width: 200px;
+      background-color: #2f363b;
+      margin: auto;
+      margin-top: 15px; }

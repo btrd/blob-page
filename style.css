@@ -372,18 +372,12 @@ h1 {
 h2 {
   font-size: 18px;
   text-transform: uppercase; }
-  h2:after {
-    content: "";
-    display: block;
-    height: 2px;
-    margin-top: 10px;
-    width: 100px;
-    background-color: #2f363b; }
 
 p {
   font-family: 'PT Serif', serif; }
 
 .title {
+  border: 15px solid #2f363b;
   background: #f2f2f2;
   height: 100vh;
   text-align: center;
@@ -393,13 +387,7 @@ p {
     left: 50%;
     top: 30%;
     transform: translate(-50%, -50%); }
-  .title h2 {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center; }
-    .title h2:after {
+    .title h1:after {
       content: "";
       display: block;
       height: 5px;
@@ -407,6 +395,25 @@ p {
       background-color: #2f363b;
       margin: auto;
       margin-top: 15px; }
+  .title h2 {
+    position: absolute;
+    left: 50%;
+    top: 53%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+  .title .scrollTo {
+    color: #2f363b;
+    text-decoration: none;
+    font-size: 200px;
+    display: block;
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: rotate(90deg) translate(0, 22%);
+    transition-duration: 100ms; }
+    .title .scrollTo:hover {
+      bottom: 0px;
+      font-size: 230px; }
 
 .content section {
   width: 100%;
@@ -421,7 +428,23 @@ p {
     width: 45%;
     height: 100%;
     padding-left: 70px;
-    padding-top: 40px; }
+    padding-top: 70px; }
+    .content section .content h1 {
+      font-size: 45px;
+      font-weight: bold;
+      margin: 0;
+      text-transform: uppercase; }
+      .content section .content h1:after {
+        content: "";
+        display: block;
+        height: 4px;
+        width: 150px;
+        background-color: #aaaaaa; }
+    .content section .content h2 {
+      color: #aaaaaa;
+      margin: 0;
+      font-size: 30px;
+      text-transform: uppercase; }
 .content section:nth-child(2n+1) .image {
   float: left; }
 .content section:nth-child(2n+1) .content {
@@ -433,11 +456,11 @@ p {
 .content section:nth-child(1) .image {
   background-image: url(img/1.jpg); }
 .content section:nth-child(2) .image {
-  background-image: url(img/1.jpg); }
+  background-image: url(img/2.jpg); }
 
 footer {
   background: #f2f2f2;
-  height: 200px;
+  height: 50vh;
   position: relative; }
   footer h2 {
     position: absolute;

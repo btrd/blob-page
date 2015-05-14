@@ -1,0 +1,23 @@
+@import 'config';
+
+footer {
+  background: $grey;
+  height: 50vh;
+  position: relative;
+  h2 {  
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    &:after {
+      content: "";
+      display: block;
+      height: 5px;
+      width: 200px;
+      background-color: $black;
+      margin: auto;
+      margin-top: 15px;
+    }
+  }
+}
